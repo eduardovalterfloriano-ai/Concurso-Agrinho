@@ -3,72 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
-
+    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <h1>Agro Forte, Futuro Sustentável</h1>
-        <p>Equilíbrio entre produção e meio ambiente</p>
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> Agrinho <span>2026</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#midia">Mídia</a></li>
+                    <li><a href="#Quiz">Desafio</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade e a preservação do meio ambiente.</p>
+            <a href="#pilares" class="btn-principal">Conhecer o Projeto</a>
+        </div>
+    </section>
 
-        <section class="banner">
-            <h2>O futuro depende das nossas escolhas</h2>
-            <p>
-                A agricultura sustentável ajuda a produzir alimentos sem prejudicar a natureza,
-                garantindo qualidade de vida para as próximas gerações.
-            </p>
-
-            <button id="btnMensagem">
-                Ver mensagem sustentável
-            </button>
-        </section>
-
-        <section class="mensagem" id="mensagem">
-            <h3>Clique no botão acima 🌱</h3>
-        </section>
-
-        <section class="cards">
-
+    <section id="pilares" class="container secao">
+        <h2 class="titulo-secao">Equilíbrio em Prática</h2>
+        <div class="cards-grid">
             <div class="card">
-                <h2>🌾 Produção Consciente</h2>
-                <p>
-                    Utilizar técnicas agrícolas modernas reduz desperdícios
-                    e melhora a produção no campo.
-                </p>
+                <i class="fa-solid fa-tractor icone-card"></i>
+                <h3>Produção Forte</h3>
+                <p>Garantir a segurança alimentar do planeta através de lavouras otimizadas, manejo inteligente do solo e alta eficiência no campo.</p>
             </div>
-
             <div class="card">
-                <h2>💧 Preservação da Água</h2>
-                <p>
-                    Economizar água é essencial para manter rios,
-                    plantações e a vida saudável.
-                </p>
+                <i class="fa-solid fa-seedling icone-card"></i>
+                <h3>Sustentabilidade</h3>
+                <p>Preservar recursos hídricos, utilizar bioinsumos e proteger a biodiversidade para que as próximas gerações continuem colhendo.</p>
             </div>
-
             <div class="card">
-                <h2>🌳 Meio Ambiente</h2>
-                <p>
-                    Preservar florestas e o solo ajuda no equilíbrio
-                    ecológico e no futuro do planeta.
-                </p>
+                <i class="fa-solid fa-chart-line icone-card"></i>
+                <h3>O Futuro</h3>
+                <p>Unir a tradição do campo com as exigências ecológicas modernas, provando que o desenvolvimento e a natureza caminham juntos.</p>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <section id="tecnologia" class="bg-alternativo">
+        <div class="container secao duas-colunas">
+            <div class="texto-coluna">
+                <h2>Inovação no Campo</h2>
+                <p>Para alcançar o equilíbrio real, o produtor de hoje utiliza drones de monitoramento, sensores de umidade de solo e inteligência artificial para aplicar recursos apenas onde é necessário.</p>
+                <p>Isso reduz o desperdício, corta custos e protege o ecossistema ao redor da propriedade rural.</p>
+            </div>
+            <div class="imagem-coluna">
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad451?auto=format&fit=crop&w=600&q=80" alt="Tecnologia no Campo" class="img-fluida">
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <section id="midia" class="container secao">
+        <h2 class="titulo-secao">O Futuro em Vídeo</h2>
+        <p class="subtitulo-secao">Assista a uma breve explicação sobre como a tecnologia impulsiona a sustentabilidade no agronegócio.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo Agrinho Sustentável" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="Quiz" class="bg-alternativo">
+        <div class="container secao">
+            <div class="quiz-box">
+                <h2>Teste seus Conhecimentos</h2>
+                <p>Como o agro moderno consegue produzir mais poluindo menos?</p>
+                <div class="opcoes-quiz">
+                    <button class="btn-opcao" onclick="verificarResposta(false)">A) Usando mais defensivos químicos sem controle.</button>
+                    <button class="btn-opcao" onclick="verificarResposta(true)">B) Através de agricultura de precisão e rotação de culturas.</button>
+                    <button class="btn-opcao" onclick="verificarResposta(false)">C) Expandindo áreas sem critério técnico.</button>
+                </div>
+                <p id="resultado-quiz" class="resultado"></p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>
-            Projeto Agrinho 2026 | Primeiro Ano do Ensino Médio
-        </p>
+        <div class="container">
+            <p>&copy; 2026 Projeto Agrinho - Ensino Médio. Desenvolvido para um futuro sustentável.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
